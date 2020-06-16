@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id='calculator'>
+        <div id="display">
+            <p id="calc-text">0 </p>
+        </div>
+        <div id="buttons">
+            <div class="container-fluid">
+                <div class="row button">
+                    <div class="col operator" onclick="empty()">
+                        <p id="clear" >AC</p>
+                    </div>
+                    <div class="col operator" onclick="negate()">
+                        <p id="sign" >+/-</p>
+                    </div>
+                    <div class="col operator" onclick="percentage()">
+                        <p id="percent" >%</p>
+                    </div>
+                    <div class="col operator" onclick="update('/')">
+                        <p id="divide" >/</p>
+                    </div>
+                </div>
+                <div class="row button">
+                    <div class="col number" onclick="update('7')">
+                        <p id="seven" class="">7</p>
+                    </div>
+                    <div class="col number" onclick="update('8')">
+                        <p id="eight" class="">8</p>
+                    </div>
+                    <div class="col number " onclick="update('9')">
+                        <p id="percent" class="">9</p>
+                    </div>
+                    <div class="col operator" onclick="update('*')">
+                        <p id="multiply" class="">*</p>
+                    </div>
+                </div>
+                <div class="row  button">
+                    <div class="col number" onclick="update('4')">
+                        <p id="four" class="">4</p>
+                    </div>
+                    <div class="col number" onclick="update('5')">
+                        <p id="five" class="">5</p>
+                    </div>
+                    <div class="col number" onclick="update('6')">
+                        <p id="six" class="">6</p>
+                    </div>
+                    <div class="col operator" onclick="update('-')">
+                        <p id="subtract"class="">-</p>
+                    </div>
+                </div>
+                <div class="row  button ">
+                    <div class="col number" onclick="update('1')">
+                        <p id="one" class="">1</p>
+                    </div>
+                    <div class="col number" onclick="update('2')">
+                        <p id="two" class="">2</p>
+                    </div>
+                    <div class="col number" onclick="update('3')">
+                        <p id="three" class="">3</p>
+                    </div>
+                    <div class="col operator" onclick="update('+')">
+                        <p id="plus" class="">+</p>
+                    </div>
+                </div>
+                <div class="row  button">
+                    <div class="col col-6 number" onclick="update('0')">
+                        <p id="zero" class="">0</p>
+                    </div>
+                    
+                    <div class="col number " onclick="update('.')">
+                        <p id="decimal" class="">.</p>
+                    </div>
+                    <div class="col operator" onclick="calculate()">
+                        <p id="equal" class="" >=</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
